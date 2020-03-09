@@ -15,7 +15,7 @@ class Clock extends React.Component {
   getWeather = () => {
     Axios({
       method: 'GET',
-      url: '/weather',
+      url: '/',
     }).then((res) => {
       this.setState({
         list: res.data.result.future.slice(1, res.data.result.future.length)
